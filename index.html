@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Aero Hand Open: low-cost, open-source, lightweight, anthropomorphic dexterous hand">
+  <meta name="description"
+    content="Aero Hand Open: A low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.">
+  <meta name="keywords"
+    content="Aero Hand Open, TetherIA, dexterous manipulation, robotic hand, tendon actuation, open-source, 3D printing, off-the-shelf components, low-cost, lightweight, anthropomorphic">
+  <meta name="author" content="TetherIA team">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TetherIA">
+  <meta property="og:title" content="Aero Hand Open: low-cost, open-source, lightweight, anthropomorphic dexterous hand">
+  <meta property="og:description" content="Aero Hand Open: A low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.">
+  <meta property="og:url" content="https://tetheria.ai/">
+  <meta property="og:image" content="https://github.com/TetherIA/aero-hand-open/blob/main/assets/overview1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aero Hand Open: TetherIA team">
+  <meta property="article:published_time" content="2025-10-28T00:00:00.000Z">
+  <meta property="article:author" content="TetherIA team">
+  <meta property="article:tag" content="Aero Hand Open">
+  <meta property="article:tag" content="TetherIA">
+  <meta property="article:tag" content="Robotics">
+  <meta property="article:tag" content="Dexterous Manipulation">
+  <meta property="article:tag" content="Open-Source Robotics">
+  <meta property="article:tag" content="3D Printing">
+  <meta property="article:tag" content="Tendon Actuation">
+  <meta property="article:tag" content="Affordable">
+  <meta property="article:tag" content="Reliable">
+  <meta property="article:tag" content="Accessible">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TetherIA">
+  <meta name="twitter:creator" content="@TetherIA">
+  <meta name="twitter:title" content="Aero Hand Open - TetherIA team">
+  <meta name="twitter:description" content="Aero Hand Open: An open-source, tendon-driven robotic hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.">
+  <meta name="twitter:image" content="https://github.com/TetherIA/aero-hand-open/blob/main/assets/overview1.png">
+  <meta name="twitter:image:alt" content="Aero Hand Open - TetherIA team">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Aero Hand Open - TetherIA team">
+  <meta name="citation_author" content="TetherIA team">
+  <meta name="citation_publication_date" content="2025-10-28">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <title>Aero Hand Open - TetherIA team | low-cost, open-source, lightweight, anthropomorphic dexterous hand</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link rel="apple-touch-icon" href="static/images/logo.png">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Aero Hand Open: low-cost, open-source, lightweight, anthropomorphic dexterous hand",
+    "description": "Aero Hand Open: An open-source, tendon-driven robotic hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "TetherIA team",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "TetherIA"
+        }
+      }
+    ],
+    "datePublished": "2025-10-28",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TetherIA"
+    },
+    "url": "https://tetheria.ai/",
+    "image": "https://github.com/TetherIA/aero-hand-open/blob/main/assets/overview1.png",
+    "keywords": ["Aero Hand Open", "TetherIA", "dexterous manipulation", "robotic hand", "tendon actuation", "open-source", "3D printing", "off-the-shelf components", "low-cost", "lightweight", "anthropomorphic"],
+    "abstract": "Aero Hand Open: A low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.",
+    "citation": "TetherIA team. (2025). Aero Hand Open: A low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://tetheria.ai/"
+    },
+    "about": [
+      {
+        "@type": "Thing", 
+        "name": "Dexterous Manipulation"
+      },
+      {
+        "@type": "Thing",
+        "name": "Open-Source Robotics"
+      },
+      {
+        "@type": "Thing",
+        "name": "3D Printing"
+      },
+      {
+        "@type": "Thing",
+        "name": "Tendon Actuation"
+      },
+      {
+        "@type": "Thing",
+        "name": "Low-Cost"
+      },
+      {
+        "@type": "Thing",
+        "name": "Lightweight"
+      },
+      {
+        "@type": "Thing",
+        "name": "Anthropomorphic"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TetherIA",
+    "url": "https://tetheria.ai/",
+    "logo": "static/images/logo.png",
+    "printEmail": "contact@tetheria.ai",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://x.com/TetherIA_ai",
+      "https://github.com/TetherIA",
+      "https://www.linkedin.com/company/tetheria/",
+      "https://www.youtube.com/@TetherIA_ai"
+    ],
+    "description": "TetherIA: A team of researchers and engineers dedicated to advancing the field of dexterous manipulation and embodied AI."
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <!-- <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <a href="https://arxiv.org/abs/2510.17890" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Aero Hand Open: A Low-Cost, Open-Source, Lightweight, Anthropomorphic Dexterous Hand</h5>
+            <p>Aero Hand Open is a low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.</p>
+            <span class="work-venue">arXiv:2510.17890</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Aero Hand Open: low-cost, open-source, lightweight, anthropomorphic dexterous hand</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">TetherIA team</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Github Repo -->
+                <span class="link-block">
+                  <a href="https://github.com/TetherIA/aero-hand-open" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Documentation -->
+                <span class="link-block">
+                  <a href="https://docs.tetheria.ai/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>Documentation</span>
+                  </a> </span>
+                
+                <!-- CAD Files and BOM -->
+                <span class="link-block">
+                  <a href="https://github.com/TetherIA/aero-hand-open/blob/main/hardware/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>CAD Files and BOM</span>
+                  </a>
+                </span>
+                <!-- Online Store -->
+                <span class="link-block">
+                  <a href="https://shop.tetheria.ai/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-store"></i>
+                    </span>
+                    <span>Shop</span>
+                  </a>
+                </span>
+                <!-- X account link -->
+                <span class="link-block">
+                  <a href="https://x.com/TetherIA_ai" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-x"></i>
+                    </span>
+                    <span>X (Twitter)</span>
+                  </a>
+              </span>
+              <!-- LinkedIn account link -->
+              <span class="link-block">
+                <a href="https://www.linkedin.com/company/tetheria/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+              </span>
+              <!-- YouTube account link -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/@TetherIA_ai" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>YouTube</span>
+                </a>
+              </span>
+              <!-- GitHub account link -->
+              <span class="link-block">
+                <a href="https://github.com/TetherIA" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 1: Abstract + Intro Video -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 section-title">Abstract</h2>
+
+      <!-- Abstract -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Aero Hand Open is a low-cost, open-source, anthropomorphic robotic hand designed and developed by TetherIA for 
+              affordable dexterous manipulation research. At just <strong>$314</strong>, it provides a capable alternative to expensive proprietary 
+              solutions while maintaining high performance through innovative tendon actuation.
+            </p>
+            <p>
+              Built using standard 3D printing and off-the-shelf electronic components, Aero Hand Open emphasizes simplicity, 
+              reliability, and accessibility. Each joint is optimized for mechanical efficiency, enabling smooth and natural 
+              motion while maintaining a lightweight, compact design. Whether you're advancing research, enhancing education, 
+              or building the next generation of robotic systems, Aero Hand Open delivers <strong>professional-grade performance</strong> at 
+              a <strong>fraction of the cost</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro Video -->
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/w1GwRfy01Ag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            See Aero Hand Open in action: effortlessly picking up an iPhone from a flat surface, grasping tiny M5 screws, pulling
+            a drill trigger, opening a soda can, and accomplishing much more with precision and dexterity.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="https://www.youtube.com/watch?v=w1GwRfy01Ag" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Aero Hand Open is a low-cost, open-source, lightweight, anthropomorphic dexterous hand by TetherIA, designed for affordable dexterous manipulation research using 3D printing and off-the-shelf components.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+  <!-- Section 2: Two Payload Videos (side by side) -->
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 section-title">Hand Payload, stronger than it looks.</h2>
+
+      <div class="hardware-videos">
+        <div class="hardware-video">
+          <iframe src="https://www.youtube.com/embed/5dC3mGMH704" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Finger Tip Payload"></iframe>
+          <h3 class="subtitle has-text-centered">The active load torque is 10 N per fingertip, sufficient to pull drill trigger and many other everyday objects.</h3>
+        </div>
+
+        <div class="hardware-video">
+          <iframe src="https://www.youtube.com/embed/YquX4tnEGGk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Hand Payload Demo"></iframe>
+          <h3 class="subtitle has-text-centered">The hand lifted a full 5-gallon water jug very easily (~18 kg)!</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Experiment Rollout Videos (2 videos side by side for each task) -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 section-title">Range of Motion</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/sxOPMRkkTjg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Range of Motion Demo
+          </h2>
+        </div>
+      </div>
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+  title={Your Paper Title Here},
+  author={First Author and Second Author and Third Author},
+  journal={Conference/Journal Name},
+  year={2024},
+  url={https://your-domain.com/your-project-page}
+}</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
