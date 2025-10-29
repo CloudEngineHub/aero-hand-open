@@ -162,15 +162,14 @@ body {
 }
 
 .architecture-layout {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
-  justify-items: center;
 }
 
 .architecture-content {
-  max-width: 34rem;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
 }
 
 .architecture-features {
@@ -228,7 +227,8 @@ body {
 }
 
 .feature-grid-horizontal {
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .feature-item {
@@ -276,6 +276,12 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+@media screen and (max-width: 1180px) {
+  .feature-grid-horizontal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .feature-copy {
   flex: 1;
   display: grid;
@@ -286,10 +292,6 @@ body {
   .architecture-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .architecture-content {
-    text-align: left;
   }
 
   .section-heading .section-title {
@@ -472,7 +474,7 @@ body {
   margin: 0 auto;
   border-radius: var(--border-radius);
   width: 100%;
-  max-width: 100px;
+  max-width: 400px;
   height: auto;
   display: block;
 }
