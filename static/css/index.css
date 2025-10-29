@@ -162,11 +162,20 @@ body {
 }
 
 .architecture-layout {
-  gap: 2.5rem;
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
 }
 
 .architecture-content {
   max-width: 34rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.architecture-features {
+  max-width: 100%;
+  width: 100%;
 }
 
 .section-heading .section-title {
@@ -202,6 +211,7 @@ body {
   display: grid;
   gap: 1.5rem;
   align-content: start;
+  max-width: 100%;
 }
 
 .feature-card .subtitle {
@@ -209,11 +219,16 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .feature-grid {
   display: grid;
   gap: 1.25rem;
+}
+
+.feature-grid-horizontal {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .feature-item {
@@ -245,6 +260,7 @@ body {
   color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 .feature-icon {
@@ -272,12 +288,20 @@ body {
     padding-bottom: 3rem;
   }
 
+  .architecture-content {
+    text-align: left;
+  }
+
   .section-heading .section-title {
     font-size: 1.85rem;
   }
 
   .feature-card {
     padding: 1.75rem;
+  }
+
+  .feature-grid-horizontal {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -445,10 +469,12 @@ body {
 
 .results-carousel .item img,
 .results-carousel video {
-  margin: 0;
+  margin: 0 auto;
   border-radius: var(--border-radius);
   width: 100%;
+  max-width: 600px;
   height: auto;
+  display: block;
 }
 
 .results-carousel .subtitle {
