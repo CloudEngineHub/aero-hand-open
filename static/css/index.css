@@ -170,11 +170,14 @@ body {
 
 .architecture-content {
   width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
 }
 
 .architecture-features {
-  max-width: 100%;
+  max-width: 72rem;
   width: 100%;
+  margin: 0 auto;
 }
 
 .section-heading .section-title {
@@ -474,7 +477,7 @@ body {
   margin: 0 auto;
   border-radius: var(--border-radius);
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
   display: block;
 }
