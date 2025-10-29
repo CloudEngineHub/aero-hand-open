@@ -456,12 +456,14 @@ body {
 }
 
 .carousel-container {
-  max-width: 30%;
+  width: min(30vw, 700px);
+  max-width: 100%;
   margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
   .carousel-container {
+    width: 100%;
     max-width: 100%;
   }
 }
